@@ -53,7 +53,7 @@ class EggProducer():
         return "eggs"
 
 class Cow(Animal, MilkProducer):
-    def __init__(self, name, age, hunger = random.randrange(1, 5)):
+    def __init__(self, name, age, hunger = random.randint(1, 5)):
         super().__init__(name, age, hunger)
 
     def __str__(self):
@@ -63,7 +63,7 @@ class Cow(Animal, MilkProducer):
         print(f"{self.name} says moo")
 
 class Chicken(Animal, EggProducer):
-    def __init__(self, name, age, hunger = random.randrange(1, 5)):
+    def __init__(self, name, age, hunger = random.randint(1, 5)):
         super().__init__(name, age, hunger)
 
     def __str__(self):
@@ -73,7 +73,7 @@ class Chicken(Animal, EggProducer):
         print(f"{self.name} says cluck")
 
 class Pig(Animal):
-    def __init__(self, name, age, hunger = random.randrange(1, 5)):
+    def __init__(self, name, age, hunger = random.randint(1, 5)):
         super().__init__(name, age, hunger)
 
     def __str__(self):
@@ -83,7 +83,7 @@ class Pig(Animal):
         print(f"{self.name} says oink")
 
 class Sheep(Animal, MilkProducer):
-    def __init__(self, name, age, hunger = random.randrange(1, 5)):
+    def __init__(self, name, age, hunger = random.randint(1, 5)):
         super().__init__(name, age, hunger)
 
     def __str__(self):
