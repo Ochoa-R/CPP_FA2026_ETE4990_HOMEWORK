@@ -1,11 +1,11 @@
 from FarmAnimals import Animal
-from Animals import MilkProducer
-from Animals import EggProducer
-from Animals import Cow
-from Animals import Chicken
-from Animals import Pig
-from Animals import Sheep
-from Farm import Farm
+from FarmAnimals import MilkProducer
+from FarmAnimals import EggProducer
+from FarmAnimals import Cow
+from FarmAnimals import Chicken
+from FarmAnimals import Pig
+from FarmAnimals import Sheep
+from FarmAnimals import Farm
 
 bingus = Farm("Bingus")
 animal_list = [
