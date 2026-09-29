@@ -99,6 +99,7 @@ class Farm():
         print(animals)
         self.__name = name
         self.__animals = [] if animals is None else animals
+        
     def __str__(self):
         farm_list = f"{self.__name}'s Animals:\n"
         for animal in self.__animals:
